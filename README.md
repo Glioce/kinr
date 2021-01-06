@@ -72,3 +72,29 @@ Temas por estudiar
 las listas estás formadas por elementos parecidos pero cambian su contenido
 las listas se pueden llenar indicando los nombres de los recursos que debe
 tener cada componente
+
+## Usar fuentes personalizadas
+Revisar la siguiente guía
+https://medium.com/@mehrankhandev/ultimate-guide-to-use-custom-fonts-in-react-native-77fcdf859cf4  
+Es necesario reiniciar el packer, si las fuentes se instalaron mientras se depura la app.  
+
+Estas son las fuentes que están pre-instaladas  
+https://github.com/react-native-training/react-native-fonts  
+
+## Notas
+Comentar elemento en JSX  
+```
+{/*comment here*/}
+```
+
+Solucionar error EPERM  
+http://bitstopixels.blogspot.com/2017/04/react-native-windows-10-eperm-operation.html  
+
+Extensiones de VSCode  
+https://medium.com/react-native-training/vscode-for-react-native-526ec4a368ce  
+
+Formatos de assets (extensiones de archivo)  
+https://github.com/facebook/metro/blob/master/packages/metro-config/src/defaults/defaults.js  
+
+Experimentar con layout de forma interactiva  
+https://yogalayout.com/playground/  
