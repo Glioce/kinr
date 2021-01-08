@@ -115,6 +115,34 @@ https://js.coach/package/react-native-button
 
 Una forma fácil de crear un botón es usar un touchable con texto anidado.  
 
+## Reproducir videos de Youtube
+La librería más popular para reproducir videos de Youtube es ```react-native-youtube```.
+En Android es necesario tener la app de Youtube instalada. No se ha probado.  
+https://www.npmjs.com/package/react-native-youtube  
+
+Aquí mencionan 3 opciones. La primera es ```react-native-webview``` que solo
+reproduce videos sin copyright. La segunda es ```react-native-youtube```
+que a veces necesita permisos y tener la app de YT instalada. La tercera
+es ```react-native-youtube-iframe```, solo reproduce videos sin copyright,
+se ha probado y al parecer no es posible desactivar la opción de compartir
+videos. La cuarta y última opción es usar ```webview``` e insertar un iframe
+generado en otra página web, es demasiado complicado.  
+https://surajmdurgad.medium.com/embedding-youtube-videos-in-a-react-native-app-8c556a18fd76  
+
+La librería ```react-native-youtube-iframe``` es fácil de usar y no aparecieron
+errores en las pruebas. Sin embargo, no se puede desactivar la opción de compartir
+los videos y no implementa la API para recibir autorización de reproducir videos
+privados.  
+https://lonelycpp.github.io/2020/03/15/react-native-youtube/  
+https://lonelycpp.github.io/react-native-youtube-iframe/  
+Tal vez se puede ocultar información, pero no parece fácil, algunas soluciones ya no funcionan  
+https://stackoverflow.com/questions/33373880/is-it-possible-to-only-remove-the-watch-later-and-share-buttons-from-youtube  
+https://www.qualtrics.com/community/discussion/9551/how-to-get-rid-of-information-watch-later-and-share-at-the-top-of-a-youtube-video-and-logo  
+https://www.embedplus.com/how-to-disable-the-watch-later-and-share-buttons-on-youtube-embeds.aspx  
+
+## Reproducir videos de Vimeo
+Probar segunda opción.  
+
 ## Notas
 Comentar elemento en JSX  
 ```
