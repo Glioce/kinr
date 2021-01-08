@@ -117,7 +117,9 @@ Una forma fácil de crear un botón es usar un touchable con texto anidado.
 
 ## Reproducir videos de Youtube
 La librería más popular para reproducir videos de Youtube es ```react-native-youtube```.
-En Android es necesario tener la app de Youtube instalada. No se ha probado.  
+En Android es necesario tener la app de Youtube instalada. Las instrucciones son un poco complicadas.
+Los videos muestran el botón de compartir y no se puede poner otro elemento encima de la zona donde se
+reproduce un video.  
 https://www.npmjs.com/package/react-native-youtube  
 
 Aquí mencionan 3 opciones. La primera es ```react-native-webview``` que solo
@@ -140,8 +142,20 @@ https://stackoverflow.com/questions/33373880/is-it-possible-to-only-remove-the-w
 https://www.qualtrics.com/community/discussion/9551/how-to-get-rid-of-information-watch-later-and-share-at-the-top-of-a-youtube-video-and-logo  
 https://www.embedplus.com/how-to-disable-the-watch-later-and-share-buttons-on-youtube-embeds.aspx  
 
+Una solución fácil para no poder compartir, es bloquear la parte superior de la zona del video
+con un elemento touchable transparente.  
+https://github.com/LonelyCpp/react-native-youtube-iframe/issues/11
+
 ## Reproducir videos de Vimeo
-Probar segunda opción.  
+La segunda opción es Vimeo. Solo hay una librería  
+https://github.com/Myagi/react-native-vimeo  
+Utiliza una página de Github para comunicarse con la API de Vimeo. No se ha probado.  
+
+Parece complicado  
+https://www.reddit.com/r/reactnative/comments/bfuwcx/react_native_vimeo_android/  
+https://stackoverflow.com/questions/53220524/how-to-play-vimeo-videos-in-react-native  
+
+Integrar videos de otras fuentes debe se más difícil.  
 
 ## Notas
 Comentar elemento en JSX  
