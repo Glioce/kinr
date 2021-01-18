@@ -4,7 +4,7 @@ Instalar nvm. Antes fue necesario desinstalar (por completo) node.
 https://www.nubo.eu/Install-Multiple-Node-Versions-On-Windows/  
 https://docs.microsoft.com/en-us/windows/nodejs/setup-on-windows  
 https://github.com/coreybutler/nvm-windows  
-Ejecutar terminal como administrador al cambiar versión de node.
+Ejecutar terminal como administrador al cambiar versión de node.  
 No ejecutar como administrador al usar react-native.  
 
 ```
