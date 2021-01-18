@@ -82,9 +82,9 @@ las listas se pueden llenar indicando los nombres de los recursos que debe
 tener cada componente
 
 ## Usar fuentes personalizadas
-Revisar la siguiente guía
+Revisar la siguiente guía  
 https://medium.com/@mehrankhandev/ultimate-guide-to-use-custom-fonts-in-react-native-77fcdf859cf4  
-Es necesario reiniciar el packer, si las fuentes se instalaron mientras se depura la app.  
+Es necesario reiniciar el packer, si las fuentes se instalan mientras se está depurando la app.  
 
 Estas son las fuentes que están pre-instaladas  
 https://github.com/react-native-training/react-native-fonts  
