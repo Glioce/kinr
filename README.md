@@ -157,6 +157,25 @@ https://stackoverflow.com/questions/53220524/how-to-play-vimeo-videos-in-react-n
 
 Integrar videos de otras fuentes debe se más difícil.  
 
+## Crear APK
+La documentación tiene instrucciones para generar un Android App Bundle y 
+publicar en Google Play, sin embargo el archivo que se obtiene es un .aab  
+https://reactnative.dev/docs/signed-apk-android  
+
+Con estas instrucciones se puede generar un .apk  
+https://dev.to/nitish173/how-to-generate-a-debug-apk-in-react-native-1gdg  
+```
+npx react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res
+
+cd android
+
+./gradlew assembleDebug
+```
+Al terminar, el archivo se encuentra en `yourProject/android/app/build/outputs/apk/debug/app-debug.apk`  
+
+Aquí hay instrucciones parecidas a las de la documentación con explicaciones más extensas  
+https://www.instamobile.io/android-development/generate-react-native-release-build-android/  
+
 ## Notas
 Comentar elemento en JSX  
 ```
