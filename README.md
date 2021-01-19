@@ -27,7 +27,7 @@ https://reactnative.dev/docs/signed-apk-android
 Ejemplos de apps hechas con React-Native  
 https://github.com/ReactNativeNews/React-Native-Apps  
 
-una ejemplo elegido al azar, pero parece interesante y complicado  
+una ejemplo elegido al azar (interesante y complicado)  
 https://github.com/GetStream/stream-chat-react-native  
 
 Se inició un proyecto vacío para probar  
@@ -158,6 +158,38 @@ https://www.reddit.com/r/reactnative/comments/bfuwcx/react_native_vimeo_android/
 https://stackoverflow.com/questions/53220524/how-to-play-vimeo-videos-in-react-native  
 
 Integrar videos de otras fuentes debe se más difícil.  
+
+## Navegar entre páginas
+El método más común para navegar entre páginas (o pantallas) es React Navigation.
+Se intala como un conjunto de extensiones.
+
+Las páginas se pueden construir como una función o como una clase, igual que la app principal.
+Si es una función, recibe como parámetro un objeto `{navigation}`.
+
+Se pueden definir páginas en diferentes archivos y después importar en el archivo original  
+https://github.com/react-navigation/react-navigation/issues/1241  
+
+El archivo que define la página debe tener estos elementos  
+```
+import React from 'react'; //estrictamente necesario
+import { ... } from 'react-native'; //componentes contenedores
+
+function NombreDePagina({ navigation }) {
+    return (
+        <View>
+            ...
+        </View>
+    );
+}
+
+export default NombreDePagina;
+```
+Después se importa en el archivo principal y se agrega a la función principal dentro de un elemento Stack.Screen
+```
+import NombreDePagina from './_archivo';
+...
+<Stack.Screen name="NombreParaMostrar" component={NomreDePagina} />
+```
 
 ## Crear APK
 La documentación tiene instrucciones para generar un Android App Bundle y 
