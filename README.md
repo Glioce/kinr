@@ -80,6 +80,8 @@ Temas por estudiar
 las listas estás formadas por elementos parecidos pero cambian su contenido
 las listas se pueden llenar indicando los nombres de los recursos que debe
 tener cada componente
+- Cambiar nombre de la app
+- Cambiar icono de la app
 
 ## Usar fuentes personalizadas
 Revisar la siguiente guía  
@@ -175,6 +177,14 @@ Al terminar, el archivo se encuentra en `yourProject/android/app/build/outputs/a
 
 Aquí hay instrucciones parecidas a las de la documentación con explicaciones más extensas  
 https://www.instamobile.io/android-development/generate-react-native-release-build-android/  
+
+## Cambiar icono de app Android
+Cambiar las imagenes de las carpetas mipmap* que se encuentran en 
+**YourProject/android/app/src/main/res  
+https://aboutreact.com/react-native-change-app-icon/
+El tutorial recomienda usar https://makeappicon.com, deben existir muchas alternativas a esa página.  
+
+Los tamaños de los iconos por default van de 48x48px a 192x192px.  
 
 ## Notas
 Comentar elemento en JSX  
