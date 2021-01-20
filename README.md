@@ -117,6 +117,27 @@ https://js.coach/package/react-native-button
 
 Una forma fácil de crear un botón es usar un touchable con texto anidado.  
 
+## Ajustar altura de imágenes automáticamente
+Simple componente con ancho fijo
+```
+const MyImg = (props) => {
+    const i = Image.resolveAssetSource(props.img);
+    const r = i.height / i.width; //ratio
+    const w = 320; //base width
+    const h = w * r; //adjusted height
+    return(
+        <View>
+            <Image source={props.img} style={{width:w, height:h}} />
+        </View>
+    );
+}
+```
+Documentación de Image  
+https://reactnative.dev/docs/image  
+
+Ajustar al ancho de la ventana  
+https://stackoverflow.com/questions/39631895/how-to-set-image-width-to-be-100-and-height-to-be-auto-in-react-native?rq=1  
+
 ## Reproducir videos de Youtube
 La librería más popular para reproducir videos de Youtube es ```react-native-youtube```.
 En Android es necesario tener la app de Youtube instalada. Las instrucciones son un poco complicadas.
