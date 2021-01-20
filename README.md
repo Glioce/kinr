@@ -107,6 +107,10 @@ https://github.com/react-native-video/react-native-video
 Otra librería (no probada)  
 https://developer.aliyun.com/mirror/npm/package/react-native-sound-player  
 
+## Repasar margin y padding
+https://blog.hubspot.com/website/css-margin-vs-padding  
+https://www.w3schools.com/css/css_boxmodel.asp  
+
 ## Botones  
 No se puede cambiar el color de fondo del botón predefinido en react-native.
 Para cambiar el estilo del botón y del texto se puede armar un botón propio.
