@@ -67,6 +67,7 @@ import Plantas from "./src/_50_plantas";
 import Audiovisuales from "./src/_60_audiovisuales";
 import Cuentos from "./src/_70_cuentos";
 import Galeria from "./src/_80_galeria";
+import Conocenos from "./src/_90_conocenos";
 
 const Stack = createStackNavigator();
 
@@ -87,6 +88,7 @@ const App: () => React$Node = () => {
         <Stack.Screen name="Audiovisuales" component={Audiovisuales} />
         <Stack.Screen name="Cuentos" component={Cuentos} />
         <Stack.Screen name="Galeria" component={Galeria} />
+        <Stack.Screen name="Conocenos" component={Conocenos} />
 
       </Stack.Navigator>
     </NavigationContainer>
